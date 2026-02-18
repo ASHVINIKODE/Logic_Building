@@ -1,10 +1,9 @@
-package Logic_Building;
 
 import java.util.Scanner;
 
 public class threeLarger {
     public static void main(String[] args) {
-        //Find Largest of Three Numbers
+        // Find Largest of Three Numbers
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the first number:");
         int a = scan.nextInt();

@@ -1,5 +1,3 @@
-package Logic_Building;
-
 import java.util.Scanner;
 
 public class twoLarger {
