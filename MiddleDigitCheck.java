@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class DistinctthreeDigits {
+public class MiddleDigitCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the 3-digit number:");
+        System.out.println("Enter the three digit number:");
         int num = sc.nextInt();
         if (num < 100 || num > 999) {
             System.out.println("Invalid input");
@@ -12,10 +12,12 @@ public class DistinctthreeDigits {
         int a = (num / 100);
         int b = (num / 10) % 10;
         int c = (num % 10);
-        if (a != b && b != c && c != a) {
-            System.out.println("all digits are distinct");
+        if (b > c && b > a) {
+            System.out.println("middle digit is largest");
+        } else if (b < c && b < a) {
+            System.out.println("middle digit is smallest");
         } else {
-            System.out.println("digits are not distinct");
+            System.out.println("middle digit is neither");
         }
     }
 }
